@@ -1,0 +1,7 @@
+"0","#rgb stands for red green blue primaries which are colour specifications for a certain object."
+"0","#The object is coloured corresponding to the given intensity of each primary."
+"0","#The last arguement of rgb is alpha, which is are semi-transparent colours that are supported"
+"0","#by only some devices."
+"0","#lwd is the line width, defaulting to 1."
+"0","#pch is the plotting character/symbol to use for each point.  The integer refers to a graphics symbol."
+"0","#cex is the arguement for character expansion that sets the scale for the symbol specified by pch."

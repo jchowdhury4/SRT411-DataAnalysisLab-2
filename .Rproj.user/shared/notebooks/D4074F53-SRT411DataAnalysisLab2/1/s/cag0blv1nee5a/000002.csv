@@ -1,0 +1,136 @@
+"0","import os
+import pandas as pd
+av = pd.read_csv(os.getenv(""avRep""),sep = ""#"")
+
+av.columns = [""IP"",""Reliability"",""Risk"",""Type"",""Country"",""Locale"",""Coord"",""X""]
+
+print(av)"
+"1","                     IP  Reliability  Risk            Type Country  \
+0        222.76.212.185            4     2   Scanning Host      CN   
+1        222.76.212.186            4     2   Scanning Host      CN   
+2           5.34.246.67            6     3        Spamming      US   
+3         178.94.97.176            4     5   Scanning Host      UA   
+4           66.2.49.232            4     2   Scanning Host      US   
+5        222.76.212.173            4     2   Scanning Host      CN   
+6        222.76.212.172            4     2   Scanning Host      CN   
+7        222.76.212.171            4     2   Scanning Host      CN   
+8         174.142.46.19            6     3        Spamming     NaN   
+9           66.2.49.244            4     2   Scanning Host      US   
+10         62.75.130.16            4     2   Scanning Host      DE   
+11         62.75.130.17            4     2   Scanning Host      DE   
+12         62.75.130.18            4     2   Scanning Host      DE   
+13         62.75.130.19            4     2   Scanning Host      DE   
+14       112.216.121.87            4     3   Scanning Host      KR   
+15       112.216.121.78            4     3   Scanning Host      KR   
+16       112.216.121.77            4     3   Scanning Host      KR   
+17       112.216.121.75            4     3   Scanning Host      KR   
+18       112.216.121.74            4     3   Scanning Host      KR   
+19        222.45.58.249            4     2   Scanning Host      CN   
+20        222.45.58.244            4     2   Scanning Host      CN   
+21       120.31.136.119            4     2   Scanning Host      CN   
+22         201.57.0.248            4     2   Scanning Host      BR   
+23         218.65.30.37            4     4   Scanning Host      CN   
+24         218.65.30.38            4     3   Scanning Host      CN   
+25         178.94.97.59            4     5   Scanning Host      UA   
+26       84.241.180.134            6     3      Malware IP      NL   
+27         62.75.130.12            4     2   Scanning Host      DE   
+28         62.75.130.13            4     2   Scanning Host      DE   
+29         62.75.130.14            4     2   Scanning Host      DE   
+...                 ...          ...   ...             ...     ...   
+258595    78.27.127.220            4     2   Scanning Host      FI   
+258596    78.27.127.210            4     2   Scanning Host      FI   
+258597     78.188.27.29            1     2   Scanning Host      TR   
+258598      223.4.10.45            6     2  Malware Domain      CN   
+258599      221.6.207.4            4     3   Scanning Host      CN   
+258600     78.27.127.51            4     2   Scanning Host      FI   
+258601     78.27.127.57            4     2   Scanning Host      FI   
+258602     78.188.27.26            1     2   Scanning Host      TR   
+258603     78.188.27.27            1     2   Scanning Host      TR   
+258604   60.168.158.231            4     4   Scanning Host      CN   
+258605     78.188.27.28            1     2   Scanning Host      TR   
+258606  180.215.161.174            4     4   Scanning Host      IN   
+258607    78.27.127.211            4     2   Scanning Host      FI   
+258608   190.229.178.34            4     3   Scanning Host      AR   
+258609   190.229.178.37            4     3   Scanning Host      AR   
+258610  190.229.178.155            4     3   Scanning Host      AR   
+258611     78.27.127.48            4     2   Scanning Host      FI   
+258612      23.83.79.89            9     2  Malware Domain     NaN   
+258613  188.190.124.120            6     3  Malware Domain      UA   
+258614     78.27.127.50            4     2   Scanning Host      FI   
+258615     78.27.127.47            4     2   Scanning Host      FI   
+258616     75.98.171.83            4     2        Spamming      US   
+258617   114.112.189.27            4     2   Scanning Host      CN   
+258618  114.112.189.139            4     2   Scanning Host      CN   
+258619  173.208.220.245            9     2        Spamming      US   
+258620  179.244.194.219            4     2        Spamming      BR   
+258621   216.99.159.166            4"
+"1","     2   Scanning Host      US   
+258622   216.99.159.169            3     2   Scanning Host      US   
+258623   216.99.159.176            3     2   Scanning Host      US   
+258624   216.99.159.117            3     3   Scanning Host      US   
+
+             Locale                          Coord   X  
+0            Xiamen     24.4797992706,118.08190155  11  
+1            Xiamen     24.4797992706,118.08190155  11  
+2               NaN                     38.0,-97.0  12  
+3            Merefa    49.8230018616,36.0507011414  11  
+4        Union City   37.5962982178,-122.065696716  11  
+5            Xiamen     24.4797992706,118.08190155  11  
+6            Xiamen     24.4797992706,118.08190155  11  
+7            Xiamen     24.4797992706,118.08190155  11  
+8               NaN     24.4797992706,118.08190155  12  
+9        Union City   37.5962982178,-122.065696716  11  
+10              NaN                       51.0,9.0  11  
+11              NaN                       51.0,9.0  11  
+12              NaN                       51.0,9.0  11  
+13              NaN                       51.0,9.0  11  
+14              NaN                     37.0,127.5  11  
+15              NaN                     37.0,127.5  11  
+16              NaN                     37.0,127.5  11  
+17              NaN                     37.0,127.5  11  
+18              NaN                     37.0,127.5  11  
+19          Nanjing    32.0616989136,118.777801514  11  
+20          Nanjing    32.0616989136,118.777801514  11  
+21           Foshan    23.0268001556,113.131500244  11  
+22              NaN                    -10.0,-55.0  11  
+23         Nanchang    28.5499992371,115.933296204  11  
+24         Nanchang    28.5499992371,115.933296204  11  
+25           Merefa    49.8230018616,36.0507011414  11  
+26              NaN                      52.5,5.75   7  
+27              NaN                       51.0,9.0  11  
+28              NaN                       51.0,9.0  11  
+29              NaN                       51.0,9.0  11  
+...             ...                            ...  ..  
+258595     Helsinki    60.1755981445,24.9342002869  11  
+258596     Helsinki    60.1755981445,24.9342002869  11  
+258597     Istanbul    41.0186004639,28.9647006989  11  
+258598      Beijing    39.9289016724,116.388298035   6  
+258599      Nanjing    32.0616989136,118.777801514  11  
+258600     Helsinki    60.1755981445,24.9342002869  11  
+258601     Helsinki    60.1755981445,24.9342002869  11  
+258602     Istanbul    41.0186004639,28.9647006989  11  
+258603     Istanbul    41.0186004639,28.9647006989  11  
+258604        Hefei     31.863899231,117.280799866  11  
+258605     Istanbul    41.0186004639,28.9647006989  11  
+258606          NaN                      20.0,77.0  11  
+258607     Helsinki    60.1755981445,24.9342002869  11  
+258608      Tucuman  -26.8241004944,-65.2226028442  11  
+258609      Tucuman  -26.8241004944,-65.2226028442  11  
+258610      Tucuman  -26.8241004944,-65.2226028442  11  
+258611     Helsinki    60.1755981445,24.9342002869  11  
+258612          NaN    60.1755981445,24.9342002869   6  
+258613      Kharkov    49.9808006287,36.2527008057   6  
+258614     Helsinki    60.1755981445,24.9342002869  11  
+258615     Helsinki    60.1755981445,24.9342002869  11  
+258616    Ann Arbor   42.2775993347,-83.7408981323  12  
+258617      Beijing    39.9289016724,116.388298035  11  
+258618      Beijing    39.9289016724,116.388298035  11  
+258619  Kansas City   39.1068000793,-94.5660018921  12  
+258620          NaN                    -10.0,-55.0  12  
+258621       Walnut   34.0115013123,-117.853500366  11  
+258622       Walnut   34.0115013123,-117.853500366  11  
+258623       Walnut   34.0115013123,-117.853500366  11  
+258624       Walnut   34.0115013123,-117.853500366  11  
+
+[258625 rows x 8 columns]
+"
