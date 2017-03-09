@@ -1,4 +1,0 @@
-"0","assets.df <- data.frame("
-"0","    name=c(""danube"", ""gander"", ""ganges"", ""mekong"", ""orinoco""),"
-"0","    os=c(""W2K8"", ""RHEL5"", ""W2K8"", ""RHEL5"", ""RHEL5""),"
-"0","    highvulns=c(1, 0, 2, 0, 0))"
