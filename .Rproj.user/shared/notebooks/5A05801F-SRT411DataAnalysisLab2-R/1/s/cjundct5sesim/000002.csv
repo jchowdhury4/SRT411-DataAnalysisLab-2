@@ -1,0 +1,7 @@
+"0","rrt.df <- subset(rrt.df, simpletype != ""Scanning Host"")"
+"0","levelplot(Freq ~ Reliability*Risk|simpletype, "
+"0","          data =rrt.df, "
+"0","          main=""Risk ~ Reliabilty | Type"", "
+"0","          ylab = ""Risk"", "
+"0","          xlab = ""Reliability"", shrink = c(0.5, 1), "
+"0","          col.regions = colorRampPalette(c(""#F5F5F5"",""#01665E""))(20))"

@@ -1,0 +1,5 @@
+"0","avURL <- ""http://datadrivensecurity.info/book/ch03/data/reputation.data"""
+"0","avRep <- ""data/reputation.data"""
+"0","if (file.access(avRep)) {"
+"0","  download.file(avURL, avRep)"
+"0","}"

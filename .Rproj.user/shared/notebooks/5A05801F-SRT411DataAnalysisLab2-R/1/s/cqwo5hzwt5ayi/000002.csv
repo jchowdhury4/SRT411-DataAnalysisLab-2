@@ -1,0 +1,8 @@
+"0","rrt.df <- subset(rrt.df, !(simpletype %in% c(""Malware distribution"", ""Malware Domain"")))"
+"0","sprintf(""Count: %d; Percent: %2.1f%%"", "
+"0","        sum(rrt.df$Freq), "
+"0","        100*sum(rrt.df$Freq)/nrow(av))"
+"1","[1]"
+"1"," ""Count: 15171; Percent: 5.9%"""
+"1","
+"
