@@ -1,6 +1,0 @@
-"0","gg <- ggplot(data=av, aes(x=Risk))"
-"0","gg <- gg + geom_bar(fill=""#000099"")"
-"0","gg <- gg + scale_x_discrete(limits=seq(max(av$Risk)))"
-"0","gg <- gg + labs(title=""'Risk' Counts"", x=""Risk Score"", y=""count"")"
-"0","gg <- gg + theme(panel.grid=element_blank(), panel.background=element_blank())"
-"0","print(gg)"

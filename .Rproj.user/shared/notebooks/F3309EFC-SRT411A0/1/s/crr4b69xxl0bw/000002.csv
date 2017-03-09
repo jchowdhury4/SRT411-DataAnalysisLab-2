@@ -1,7 +1,0 @@
-"0","file.create(""firstscript.R"")"
-"1","[1]"
-"1"," TRUE"
-"1","
-"
-"0","writeLines(text = ""plot(rnorm(100))"", con = ""firstscript.R"")"
-"0","source(""firstscript.R"")"

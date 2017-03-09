@@ -1,7 +1,0 @@
-"0","mean(sqrt(rnorm(100)))"
-"2","NaNs produced"
-"1","[1]"
-"1"," NaN"
-"1","
-"
-"0","#NaN values are produced among some of the elements because the a square root of a negative was calculated."

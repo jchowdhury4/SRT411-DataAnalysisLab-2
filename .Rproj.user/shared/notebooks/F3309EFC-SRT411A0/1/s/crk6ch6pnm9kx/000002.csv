@@ -1,3 +1,0 @@
-"0","CalculateNewVector <- function(vect) {"
-"0","  return(ifelse((vect < 5 | vect > 90),vect*10,vect*0.1))"
-"0","}"
